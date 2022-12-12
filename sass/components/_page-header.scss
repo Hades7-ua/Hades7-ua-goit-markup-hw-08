@@ -1,55 +1,62 @@
 .header {
-    margin: 0px;
-    border-bottom: 1px solid #ececec;
-    &__list {
-            display: flex;
-            align-items: center;
-        }
-                &__nav {
-                    display: flex;
-                    align-items: center;
-                }
-}
-
-
-
-
-
-.site-nav__list {
+  margin: 0px;
+  border-bottom: 1px solid #ececec;
+  &__list {
     display: flex;
     align-items: center;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__logo {
+    margin-right: 93px;
+    color: $title-text-color;
+    font-family: $font-Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    &.link span {
+      color: $accent-color;
+    }
+  }
 }
 
-.site-nav__menu,
-.auth-nav__menu {
+.site-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+  &__menu,
+  .auth-nav__menu {
     position: relative;
-}
-
-
-
-.site-nav__list .list__item +.list__item {
-    margin-left: 50px;
-}
-
-.site-nav__link {
+  }
+  &__list {
+    .list__item:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+  &__link {
     color: $accent-color;
 
     &::after {
-            content: "";
-    
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background: $accent-color;
-            width: 100%;
-            height: 5px;
-            box-shadow: $box-shadow, $box-shadow;
-            border-radius: 2px;
-            transition: opacity $time-function $timing-function;
-        }
- }
+      content: "";
 
-.site-nav__list .link {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: $accent-color;
+      width: 100%;
+      height: 5px;
+      box-shadow: $box-shadow, $box-shadow;
+      border-radius: 2px;
+      transition: opacity $time-function $timing-function;
+    }
+  }
+  &__list .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -62,26 +69,22 @@
 
     &:hover,
     &:focus {
-        color: $accent-color;
+      color: $accent-color;
     }
+  }
 }
 
-
-.auth-nav.list {
-    display: flex;
+.auth-nav {
+  display: flex;
+  &.list {
     margin-left: auto;
-}
-
-.auth-nav .list__item + .list__item {
-    margin-left: 50px;
-}
-
-.auth-nav__link {
+  }
+  &__menu:not(:last-child) {
+    margin-right: 50px;
+  }
+  &__link {
     display: flex;
     align-items: center;
-}
-
-.auth-nav__link {
     color: $primary-text-color;
     font-weight: 500;
     font-size: 14px;
@@ -91,13 +94,11 @@
 
     &:hover,
     &:focus {
-        color: $accent-color;
+      color: $accent-color;
     }
-        &__icon {
-            margin-right: 10px;
-            fill: currentColor;
-        }
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
-
-
-
