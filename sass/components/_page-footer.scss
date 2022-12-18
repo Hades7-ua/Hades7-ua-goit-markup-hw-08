@@ -17,8 +17,10 @@
     text-transform: uppercase;
   }
 
-  &__list {
-    display: flex;
+  @media screen and (min-width: 1200px) {
+    &__list {
+      display: flex;
+    }
   }
 
   &__links {
@@ -70,9 +72,12 @@
       transition: color $time-function $time-function;
     }
   }
-  &__block {
-    display: flex;
-    align-items: baseline;
+
+  @media screen and (min-width: 1200px) {
+    &__block {
+      display: flex;
+      align-items: baseline;
+    }
   }
 
   &__logo {
@@ -83,7 +88,7 @@
     font-size: 26px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    &__logo.link span {
+    &.link span {
       margin-bottom: 20px;
       color: $accent-color;
     }

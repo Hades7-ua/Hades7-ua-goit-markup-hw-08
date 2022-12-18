@@ -29,6 +29,10 @@
   &__list {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
   &__menu,
   .auth-nav__menu {
@@ -100,5 +104,9 @@
   &__icon {
     margin-right: 10px;
     fill: currentColor;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
