@@ -18,6 +18,9 @@
 // Кнопка футера
 
 .button__submit {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
   display: flex;
   width: 200px;
   height: 50px;

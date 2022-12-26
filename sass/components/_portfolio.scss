@@ -2,6 +2,7 @@
 .menu {
   display: flex;
   justify-content: center;
+  
   &__item {
     border-radius: 4px;
     padding: 6px 22px;
@@ -35,23 +36,28 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
   &__list:hover {
     .projects__text {
       transform: translateY(0);
       opacity: 1;
     }
   }
+
   &__list:nth-child(3n) {
     margin-right: 0px;
   }
+
   &__list:nth-last-child(-n + 3) {
     margin-bottom: 0px;
   }
+
   &__list:hover,
   &__list:focus {
     box-shadow: $box-shadow;
     transition: $time-function $timing-function;
   }
+  
   &__item {
     position: relative;
     overflow: hidden;
