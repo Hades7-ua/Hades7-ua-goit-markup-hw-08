@@ -8,8 +8,12 @@
     @media screen and(max-width:767px) {
       margin-top: 60px;
     }
+    @media screen and (min-width:768px) {
+      
+    }
+
     @media screen and (min-width: 1200px) {
-      margin-left: 70px;      
+      margin-left: 70px;
     }
   }
 
@@ -28,6 +32,9 @@
     @media screen and(max-width:767px) {
       display: flex;
       align-items: center;
+    }
+    @media screen and (min-width: 768px) {
+      display: flex;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
@@ -66,9 +73,9 @@
   }
 
   &__email {
-    @media screen and(max-width:767px){
+    @media screen and(max-width:1199px) {
       margin-bottom: 20px;
-      min-width: 450px;
+      max-width: 450px;
     }
     min-width: 360px;
     height: 50px;
@@ -98,6 +105,15 @@
       flex-direction: column;
       align-items: center;
       text-align: center;
+    }
+  }
+
+  &__tablet {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 60px;
     }
   }
 
@@ -131,7 +147,7 @@
         display: flex;
         align-items: baseline;
       }
-      @media screen and(max-width:767px){
+      @media screen and(max-width:767px) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -177,7 +193,7 @@
 }
 
 .subscription {
-  @media screen and(max-width:767px) {
+  @media screen and(max-width:1199px) {
     display: flex;
     flex-direction: column;
     align-items: center;
